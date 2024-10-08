@@ -1,6 +1,6 @@
 import ollama
 model = "mistral:latest"
-description=" a close up of a remote control on a black background"
+description="a close up of a mouse with a black background"
 prompt=f'''Object Description: {description}
         Based on the object description Identify the object and provide the following material properties. Respond only with the required values, no comments or notes:
 

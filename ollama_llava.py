@@ -10,7 +10,7 @@ prompt=f"""
 
         """
 
-file_path = "object.png"
+file_path = "object.jpg"
 
 stream = ollama.generate(
     model="llava:7b",

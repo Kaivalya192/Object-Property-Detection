@@ -5,7 +5,7 @@ from transformers import BlipProcessor, BlipForConditionalGeneration
 processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
 model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large").to("cuda" if torch.cuda.is_available() else "cpu")
 
-image_path = "object.png"
+image_path = "object.jpg"
 try:
     pil_image = Image.open(image_path)
 except FileNotFoundError:
